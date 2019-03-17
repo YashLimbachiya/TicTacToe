@@ -43145,7 +43145,7 @@ window.App = {
 
     gameOverWithWinEvent = ticTacToeInstance.GameOverWithWin();
     gameOverWithWinEvent.watch(function(error, eventObj) {
-      __WEBPACK_IMPORTED_MODULE_3_jquery___default()("h1").hide();
+      __WEBPACK_IMPORTED_MODULE_3_jquery___default()("#titles").hide();
       App.gameOver();
     });
 
