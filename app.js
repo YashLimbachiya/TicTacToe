@@ -43203,7 +43203,7 @@ window.App = {
     }
 
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.in-game').hide();
-    __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.game-start').show();
+    /*$('.game-start').show();*/
   },
   setStone: function (event) {
     console.log(event);
