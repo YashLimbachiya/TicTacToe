@@ -43144,7 +43144,9 @@ window.App = {
     nextPlayerEvent.watch(App.nextPlayer);
 
     gameOverWithWinEvent = ticTacToeInstance.GameOverWithWin();
-    gameOverWithWinEvent.watch(App.gameOver);
+    gameOverWithWinEvent.watch(App.gameOver, function(error, eventObj) {
+      __WEBPACK_IMPORTED_MODULE_3_jquery___default()(".game-start").show();
+    });
 
     gameOverWithDrawEvent = ticTacToeInstance.GameOverWithDraw();
     gameOverWithDrawEvent.watch(App.gameOver);
@@ -43194,11 +43196,11 @@ window.App = {
     gameOverWithWinEvent.stopWatching();
     gameOverWithDrawEvent.stopWatching();
 
-    /*for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
-        $('#board')[0].children[0].children[i].children[j].innerHTML = '';
+        __WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j].innerHTML = '';
       }
-    }*/
+    }
 
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.in-game').hide();
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.game-start').show();
