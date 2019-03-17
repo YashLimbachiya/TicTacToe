@@ -43145,7 +43145,7 @@ window.App = {
 
     gameOverWithWinEvent = ticTacToeInstance.GameOverWithWin();
     gameOverWithWinEvent.watch(App.gameOver, function(error, eventObj) {
-      __WEBPACK_IMPORTED_MODULE_3_jquery___default()(".game-start").hide();
+      __WEBPACK_IMPORTED_MODULE_3_jquery___default()("h1").hide();
     });
 
     gameOverWithDrawEvent = ticTacToeInstance.GameOverWithDraw();
@@ -43203,7 +43203,7 @@ window.App = {
     }
 
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.in-game').hide();
-    /*$('.game-start').show();*/
+    __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.game-start').show();
   },
   setStone: function (event) {
     console.log(event);
