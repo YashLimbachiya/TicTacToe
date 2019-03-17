@@ -43194,18 +43194,18 @@ window.App = {
     gameOverWithWinEvent.stopWatching();
     gameOverWithDrawEvent.stopWatching();
 
-    for (var i = 0; i < 3; i++) {
+    /*for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
-        __WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j].innerHTML = '';
+        $('#board')[0].children[0].children[i].children[j].innerHTML = '';
       }
-    }
+    }*/
 
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.in-game').hide();
     __WEBPACK_IMPORTED_MODULE_3_jquery___default()('.game-start').show();
   },
   setStone: function (event) {
     console.log(event);
-
+    /*Turn off the On-Click Handler*/
     for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
         __WEBPACK_IMPORTED_MODULE_3_jquery___default()(__WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j]).prop('onclick', null).off('click');
