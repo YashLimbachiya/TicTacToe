@@ -43150,8 +43150,8 @@ window.App = {
       } else {
         console.error(error);
       }
-      __WEBPACK_IMPORTED_MODULE_3_jquery___default()("#titles").hide();
       App.gameOver();
+      __WEBPACK_IMPORTED_MODULE_3_jquery___default()("#titles").hide();
     });
 
     gameOverWithDrawEvent = ticTacToeInstance.GameOverWithDraw();
