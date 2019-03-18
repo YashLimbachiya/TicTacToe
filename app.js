@@ -43157,6 +43157,7 @@ window.App = {
   endsEvents: function(error, eventObj) {
     App.printBoard();
     console.log(eventObj);
+    console.log("EndsEventss");
   },
   nextPlayer: function(error, eventObj) {
     if(arrEventsFired.indexOf(eventObj.blockNumber) === -1) {
@@ -43193,7 +43194,7 @@ window.App = {
       if (eventObj.args.winner == account) {
         for (var i = 0; i < 3; i++) {
           console.log("winner");
-          __WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j].css("color", "red");
+          /*$('#board')[0].children[0].children[i].children[j].css("color", "red");*/
         }
         alert('Congratulations, You Won!');
       } else {
