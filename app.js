@@ -43054,7 +43054,7 @@ var gameOverWithWinEvent;
 var gameOverWithDrawEvent;
 var arrEventsFired;
 
-var gameOverEvent;
+var endsEvent;
 
 window.App = {
   start: function() {
