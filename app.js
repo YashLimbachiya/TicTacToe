@@ -43183,6 +43183,7 @@ window.App = {
     if (eventObj.event == 'GameOverWithWin') {
       if (eventObj.args.winner == account) {
         for (var i = 0; i < 3; i++) {
+          console.log("red");
           __WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j].css("color", "red");
         }
         alert('Congratulations, You Won!');
