@@ -43155,6 +43155,7 @@ window.App = {
     endsEvent.watch(App.endsEvents);
   },
   endsEvents: function(error, eventObj) {
+  	console.log("endssss");
     App.printBoard();
     console.log("EndsEventss");
   },
@@ -43225,7 +43226,6 @@ window.App = {
         __WEBPACK_IMPORTED_MODULE_3_jquery___default()(__WEBPACK_IMPORTED_MODULE_3_jquery___default()('#board')[0].children[0].children[i].children[j]).prop('onclick', null).off('click');
       }
     }
-    App.printBoard();
     ticTacToeInstance.setStone(event.data.x, event.data.y, { from: account }).then(txResult => {
       console.log(txResult);
       App.printBoard();
