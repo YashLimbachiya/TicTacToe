@@ -43232,7 +43232,7 @@ window.App = {
   },
   printBoard: function() {
     ticTacToeInstance.getBoard.call().then(board => {
-      console.log("Printing Board");
+      /*console.log("Printing Board");*/
       for (var i = 0; i < board.length; i++) {
         for (var j = 0; j < board[i].length; j++) {
           if (board[i][j] == account) {
