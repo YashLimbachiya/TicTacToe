@@ -43156,7 +43156,6 @@ window.App = {
   },
   endsEvents: function(error, eventObj) {
     App.printBoard();
-    console.log(eventObj);
     console.log("EndsEventss");
   },
   nextPlayer: function(error, eventObj) {
@@ -43207,6 +43206,7 @@ window.App = {
     nextPlayerEvent.stopWatching();
     gameOverWithWinEvent.stopWatching();
     gameOverWithDrawEvent.stopWatching();
+    endsEvent.stopWatching();
 
     for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
